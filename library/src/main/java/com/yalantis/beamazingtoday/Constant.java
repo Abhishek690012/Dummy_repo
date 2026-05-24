@@ -8,3 +8,10 @@ public class Constant {
     public static final long ANIM_DURATION_MILLIS = 300;
 
 }
+
+/**
+ * Created by galata on 15.07.16.
+ */
+/**
+ * Created by galata on 15.07.16.
+ */
