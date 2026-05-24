@@ -15,6 +15,9 @@ import com.yalantis.beamazingtoday.Constant;
 /**
  * Created by galata on 15.07.16.
  */
+/**
+ * Created by galata on 15.07.16.
+ */
 public class AnimationUtil {
 
     public static void show(View view) {
