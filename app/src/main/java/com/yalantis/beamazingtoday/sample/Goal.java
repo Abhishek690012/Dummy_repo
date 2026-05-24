@@ -6,7 +6,7 @@ import com.yalantis.beamazingtoday.interfaces.BatModel;
  * Created by galata on 22.08.16.
  */
 public class Goal implements BatModel {
-//afgk
+
     private String name;
 
     private boolean isChecked;
