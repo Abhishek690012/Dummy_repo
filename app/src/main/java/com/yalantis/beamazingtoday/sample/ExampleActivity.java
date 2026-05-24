@@ -23,7 +23,7 @@ import com.yalantis.beamazingtoday.util.TypefaceUtil;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
+/** dummy change
  * Created by galata on 20.07.16.
  */
 public class ExampleActivity extends AppCompatActivity implements BatListener, OnItemClickListener, OnOutsideClickedListener {
@@ -79,7 +79,7 @@ public class ExampleActivity extends AppCompatActivity implements BatListener, O
         mGoals.add(0, new Goal(string));
         mAdapter.notify(AnimationType.ADD, 0);
     }
-
+    #dummy change
     @Override
     public void delete(int position) {
         mGoals.remove(position);
