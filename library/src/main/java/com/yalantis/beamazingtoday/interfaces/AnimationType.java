@@ -16,5 +16,5 @@ public @interface AnimationType {
     int MOVE = 2;
 
 }
-//dajojgfilusdguvadsho
-//fjsadougfhuaesh
+// gand marao
+//acche se kro 

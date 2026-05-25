@@ -37,7 +37,7 @@ public class AnimationUtil {
 
         animator.setDuration(Constant.ANIM_DURATION_MILLIS).start();
     }
-
+    //not required change.....
     public static void showViews(View ... views) {
         for (View view : views) {
             show(view);
