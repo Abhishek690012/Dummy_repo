@@ -38,48 +38,7 @@ public class ExampleActivity extends AppCompatActivity implements BatListener, O
     private List<BatModel> mGoals;
     private BatItemAnimator mAnimator;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_example);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("");
-
-        ((TextView) findViewById(R.id.text_title)).setTypeface(TypefaceUtil.getAvenirTypeface(this));
-
-        mRecyclerView = (BatRecyclerView) findViewById(R.id.bat_recycler_view);
-        mAnimator = new BatItemAnimator();
-
-        mRecyclerView.getView().setLayoutManager(new LinearLayoutManager(this));
-        mRecyclerView.getView().setLayoutManager(new LinearLayoutManager(this));
-        mRecyclerView.getView().setLayoutManager(new LinearLayoutManager(this));
-        mRecyclerView.getView().setAdapter(mAdapter = new BatAdapter(mGoals = new ArrayList<BatModel>() {{
-            add(new Goal("first"));
-            add(new Goal("second"));
-            add(new Goal("third"));
-            add(new Goal("fourth"));
-            add(new Goal("fifth"));
-            add(new Goal("sixth"));
-            add(new Goal("seventh"));
-            add(new Goal("eighth"));
-            add(new Goal("ninth"));
-            add(new Goal("tenth"));
-        }}, this, mAnimator).setOnItemClickListener(this).setOnOutsideClickListener(this));
-
-        ItemTouchHelper itemTouchHelper = new ItemTouchHelper(new BatCallback(this));
-        itemTouchHelper.attachToRecyclerView(mRecyclerView.getView());
-        mRecyclerView.getView().setItemAnimator(mAnimator);
-        mRecyclerView.setAddItemListener(this);
-
-        findViewById(R.id.root).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mRecyclerView.revertAnimation();
-            }
-        });
-    }
 
     @Override
     public void add(String string) {
