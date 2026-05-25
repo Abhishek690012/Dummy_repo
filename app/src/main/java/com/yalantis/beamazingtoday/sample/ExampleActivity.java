@@ -48,6 +48,8 @@ public class ExampleActivity extends AppCompatActivity implements BatListener, O
         mAnimator = new BatItemAnimator();
 
         mRecyclerView.getView().setLayoutManager(new LinearLayoutManager(this));
+        mRecyclerView.getView().setLayoutManager(new LinearLayoutManager(this));
+        mRecyclerView.getView().setLayoutManager(new LinearLayoutManager(this));
         mRecyclerView.getView().setAdapter(mAdapter = new BatAdapter(mGoals = new ArrayList<BatModel>() {{
             add(new Goal("first"));
             add(new Goal("second"));
@@ -105,7 +107,7 @@ public class ExampleActivity extends AppCompatActivity implements BatListener, O
     public void onClick(BatModel item, int position) {
         Toast.makeText(this, item.getText(), Toast.LENGTH_SHORT).show();
     }
-    //overidden functions
+
     @Override
     public void onOutsideClicked() {
         mRecyclerView.revertAnimation();
