@@ -105,7 +105,7 @@ public class ExampleActivity extends AppCompatActivity implements BatListener, O
     public void onClick(BatModel item, int position) {
         Toast.makeText(this, item.getText(), Toast.LENGTH_SHORT).show();
     }
-
+    //overidden functions
     @Override
     public void onOutsideClicked() {
         mRecyclerView.revertAnimation();
