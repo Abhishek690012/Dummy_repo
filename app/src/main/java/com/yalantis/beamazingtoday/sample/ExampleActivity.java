@@ -26,6 +26,11 @@ import java.util.List;
 /** dummy change
  * Created by galata on 20.07.16.
  */
+/** dummy change
+ * Created by galata on 20.07.16.
+ *//** dummy change
+ * Created by galata on 20.07.16.
+ */
 public class ExampleActivity extends AppCompatActivity implements BatListener, OnItemClickListener, OnOutsideClickedListener {
 
     private BatRecyclerView mRecyclerView;
