@@ -38,8 +38,20 @@ public class ExampleActivity extends AppCompatActivity implements BatListener, O
     private List<BatModel> mGoals;
     private BatItemAnimator mAnimator;
 
-
-
+/** dummy change
+ * Created by galata on 20.07.16.
+ *//** dummy change
+ * Created by galata on 20.07.16.
+ */
+/** dummy change
+ * Created by galata on 20.07.16.
+ *//** dummy change
+ * Created by galata on 20.07.16.
+ *//** dummy change
+ * Created by galata on 20.07.16.
+ *//** dummy change
+ * Created by galata on 20.07.16.
+ */
     @Override
     public void add(String string) {
         mGoals.add(0, new Goal(string));
